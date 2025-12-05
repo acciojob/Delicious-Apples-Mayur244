@@ -1,1 +1,152 @@
 /* your code here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product {
+	position: relative;
+	background-color: palegreen;
+	padding: 30px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	color: white;
+}
+
+.photo-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.photo-album {
+	background-color: white;
+	box-shadow: 0px 1px 20px gray;
+	height: 90px;
+	padding-top:14px;
+}
+
+.photo-album ul {
+	display: flex;
+	gap: 3px;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	padding-right:10px;
+}
+
+.photo-main > img {
+	position: relative;
+	left: -60px;
+}
+
+.photo-main {
+	background-color: yellowgreen;
+}
+
+.photo-album > ul > li > img {
+	border: 1px solid lightgray;
+}
+
+.color-picker{
+	display: flex;
+}
+
+.product__photo {
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	top: 10%;
+	left: 10%;
+	z-index: 20;
+}
+
+.info-container{
+	position: absolute;
+	top: 50px;
+	left: 44%;
+	width: 55%;
+	height: 400px;
+	padding: 9px;
+}
+
+.product__info {
+	position: absolute;
+	background-color: white;
+	top: 4.5%;
+	z-index: 1;
+	left: 15%;
+	height: 550px;
+	width: 600px;
+	padding-right: 20px
+}
+
+.title h1 {
+	font-size: 28px;
+	margin-bottom:5px;
+}
+
+.title span {
+	font-size: 15px;
+	color: darkgray;
+}
+
+.price span {
+	font-size: 60px;
+}
+
+.price {
+	margin-top: 28px;
+	color: orangered;
+	margin-bottom: 28px
+}
+
+.variant h3, .description h3 {
+	color: darkgray;
+	font-size: 15px;
+}
+
+.variant ul {
+	list-style-type: none;
+	margin-top: 8px;
+	margin-left: 60px;
+}
+
+.variant > ul > li > img {
+	height: 40px;
+}
+
+.variant > ul > li:first-child {
+	border: 2px solid gray;
+}
+
+.description ul{
+	 margin-top: 8px;
+	 margin-left: 60px;
+	 font-size: 13px;
+}
+
+ .description{
+	 margin-top: 28px;
+	 margin-bottom: 28px;
+ }
+
+.add-to-card-btn {
+	background-color: orangered;
+	padding: 14px 28px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 6px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
